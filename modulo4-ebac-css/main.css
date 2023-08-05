@@ -126,3 +126,18 @@ section h2 {
     background-color: #ff9f1a;
 }
 
+#tech {
+    background-color: #f8abab;
+}
+
+#tech .articles article a {
+    background-color: #ff9f1a;
+}
+
+#entret {
+    background-color: #d0f8ab;
+}
+
+#entret .articles article a {
+    background-color: #fae525;
+}
