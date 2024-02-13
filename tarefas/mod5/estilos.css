@@ -1,0 +1,135 @@
+body {
+    font-family: "Protest Revolution", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.titulo {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: gold;
+    text-decoration: none;
+    padding: 10px;
+    transition: color 0.3s; /* Adicione uma transição suave */
+}
+
+nav ul li a:hover {
+    color: #ffd700;
+}
+
+main {
+    padding: 20px 10%;
+}
+
+#section1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.left img {
+    max-width: 100%;
+    height: auto;
+}
+
+.right {
+    flex: 1;
+    padding: 0 20px;
+}
+
+#section2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.box {
+    flex: 1;
+    padding: 0 20px;
+}
+
+#tipos-ioio {
+    width: 30%;
+}
+
+#manobras-ioio {
+    width: 30%;
+}
+
+#contatos-ioio {
+    width: 40%;
+}
+
+#mensagem {
+    width: 170px; /* Subtraímos 20px para levar em consideração o padding */
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: left;
+    padding: 10px 10% 0;
+    width: 100%;
+/*    position: fixed;  */
+    bottom: 0;
+/*    height: 20px; */
+    vertical-align: top;
+}
+
+.social-icons {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-icons li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-icons li:last-child {
+    margin-right: 0;
+}
+
+.social-icons a {
+    color: #333;
+    font-size: 48px;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #007bff;
+}
+
+#tipos-ioio {
+    width: 30%; /* Ajuste conforme necessário */
+    padding: 0 20px;
+    /* Outros estilos */
+}
+
+#tipos-ioio img {
+    width: 100%; /* A imagem ocupará toda a largura da div pai */
+    height: auto; /* Altura automática para manter a proporção da imagem */
+}
