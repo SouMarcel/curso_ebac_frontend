@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Io-Ios</title>
+    <link rel="stylesheet" href="estilos.css">
+    <!-- Adicione a fonte "Protest Revolution" -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1 class="titulo">Bem-vindo ao Mundo do Io-Io</h1>
+        <!-- Adicione os links do cabeçalho -->
+        <nav>
+            <ul>
+                <li><a href="#tipos-ioio" class="link-ouro">Tipos de Io-Io</a></li>
+                <li><a href="#contato" class="link-ouro">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+
+    <main>
+        <section id="section1">
+            <div class="left">
+                <!-- Atualize o caminho da imagem -->
+                <img src="./img/ioio.jpg" alt="Io-Io" width="600" height="400">
+            </div>
+            <div class="right">
+                <h2 class="protest-revolution-regular">História do Io-Io</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac tortor non nulla aliquet bibendum. Curabitur et urna felis. Fusce gravida risus vel consequat fermentum.</p>
+                <!-- Adicione mais linhas conforme necessário -->
+            </div>
+        </section>
+
+        <section id="section2">
+            <div class="box" id="tipos-ioio">
+                <h2 class="protest-revolution-regular">Tipos de Io-Io</h2>
+                <img src="./img/tipo.webp" alt="tipo ioio">
+                <p>Descrição dos tipos de Io-Io...</p>
+            </div>
+            <div class="box">
+                <h2 class="protest-revolution-regular">Manobras com Io-Io</h2>
+                <p>Descrição das manobras com Io-Io...</p>
+            </div>
+            <div class="box" id="contato">
+                <h2 class="protest-revolution-regular">Contatos</h2>
+                <div class="contato-container">
+                    <!-- Lado esquerdo: Formulário -->
+                    <div class="formulario">
+                        <form id="form-contato" action="#" method="post">
+                            <label for="nome-completo">Nome completo:</label><br>
+                            <input type="text" id="nome-completo" name="nome-completo" pattern="[A-Za-zÀ-ú\s]+" required><br>
+            
+                            <label for="email">Email:</label><br>
+                            <input type="email" id="email" name="email" required><br>
+            
+                            <label for="telefone">Telefone:</label><br>
+                            <input type="tel" id="telefone" name="telefone" pattern="[0-9]{2}\s[0-9]{5}-[0-9]{4}" placeholder="99 99999-9999" required><br>
+            
+                            <label for="mensagem">Mensagem:</label><br>
+                            <textarea id="mensagem" name="mensagem" rows="4" cols="50"></textarea><br>
+            
+                            <input type="submit" value="Enviar">
+                        </form>
+                    </div>
+            
+                    <!-- Lado direito: Links e ícones -->
+                    <div class="redes-sociais">
+                        <h3>Siga-nos:</h3>
+                        <ul class="social-icons">
+                            <li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+    </main>
+
+    <footer>
+        <p class="direita">&copy; 2024 Io-Ios. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
