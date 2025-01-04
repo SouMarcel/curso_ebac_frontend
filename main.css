@@ -16,12 +16,17 @@ html {
 }
 
 header {
+    z-index: 1;
+    position: sticky;
+}    
+
+header, footer {
     background-color: #192a56;
     padding-top: 16px;
     color: #fff;
 }
 
-header > .container {
+header > .container, footer > .container {
     justify-content: space-between;
     align-items: center;
     padding-bottom: 16px;
@@ -79,3 +84,90 @@ section h2 {
     font-size: 32px;
     margin-bottom: 16px;
 }
+
+.lista-carros {
+    flex-wrap: wrap;
+}
+
+.lista-carros img {
+    width: 100%;
+}
+
+.lista-carros li {
+    list-style: none;
+    max-width: 30%;
+    margin-bottom: 24px;
+}
+
+.lista-carros li h3 {
+    margin: 16px 0;
+}
+
+.item-central {
+    margin: 0 5%;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    background-color: #119759;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.price {
+    margin: 16px 0;
+    display: block;
+}
+
+.price del {
+    color: #888;
+    font-size: 14px;
+}
+
+.form-campo {
+    margin-bottom: 16px;
+}
+
+.form-campo label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.form-campo input, .form-campo textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    display: block;
+}
+
+.form-campo textarea {
+    resize: none;
+    height: 120px;
+}
+
+form {
+    max-width: 360px;
+}
+
+form button {
+    width: 120px;
+}
+
+footer li {
+    list-style: none;
+    margin-left: 16px;
+}
+
+footer li img {
+    height: 32px;
+}
+
