@@ -15,16 +15,18 @@ html {
     margin: 0 auto;
 }
 
-header {
-    z-index: 1;
-    position: sticky;
-}    
-
 header, footer {
     background-color: #192a56;
     padding-top: 16px;
     color: #fff;
 }
+
+header {
+    z-index: 1;
+    position: sticky;
+    top: 0;
+    left: 0;
+}    
 
 header > .container, footer > .container {
     justify-content: space-between;
