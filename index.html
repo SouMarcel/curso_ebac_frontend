@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EBAC Motors</title>
     <link rel="preconnect" href="http://fonts.googleapis.com">
     <link rel="preconnect" href="http://fonts.gstatic.com" crossorigin>
@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./main.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <script src="./js/jquery.mask.min.js"></script>
 </head>
 
 <body>
@@ -246,6 +247,7 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./js/jquery.mask.min.js"></script>
     <script>
         $(document).ready(function(){
             $('#carrossel').slick({
@@ -260,6 +262,13 @@
             $('.menu-hamburguer').click(function(){
                 $('nav').slideToggle();
             });
+            
+            if (window.innerWidth < 768) {
+                $('#telefone').mask('(00) 00000-0000', { placeholder: "(__) _____-____" });
+            } else {
+                $('#telefone').mask('(00) 0000-0000', { placeholder: "(__) ____-____" });
+            }
+            
         });
     </script>
 </body>
