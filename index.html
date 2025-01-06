@@ -212,7 +212,7 @@
                 </div>
                 <div class="form-campo">
                     <label for="veiculo-interesse">Veículo de Interesse</label>
-                    <input type="text" id="veiculo-interesse" name="veiculo-interesse">
+                    <input type="text" id="veiculo-interesse" name="veiculo_interesse">
                 </div>
                 <div class="form-campo">
                     <label for="mensagem">Mensagem</label>
@@ -248,6 +248,7 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="./js/jquery.mask.min.js"></script>
+    <script src="./js/jquery.messages_pt_BR.min.js"></script>
     <script>
         $(document).ready(function(){
             $('#carrossel').slick({
@@ -262,15 +263,53 @@
             $('.menu-hamburguer').click(function(){
                 $('nav').slideToggle();
             });
-            
-            if (window.innerWidth < 768) {
-                $('#telefone').mask('(00) 00000-0000', { placeholder: "(__) _____-____" });
-            } else {
-                $('#telefone').mask('(00) 0000-0000', { placeholder: "(__) ____-____" });
-            }
-            
+        
+            $('#telefone').mask('(00) 00000-0000', {placeholder: '(__) _____-____'});
+
+            $('form').validate({
+                rules: {
+                    nome: {
+                        required: true,
+                    
+                    },
+                    telefone: {
+                        required: true,
+                        minlength: 14
+                    },
+                    email: {
+                        required: true,
+                        email: true
+                    },
+                    veiculo_interesse: {
+                        required: true
+                    },
+                    mensagem: {
+                        required: true
+                    }
+                },
+                messages: {
+                    nome: {
+                        required: 'O campo nome é obrigatório',
+                        minlength: 'O campo nome deve ter no mínimo 3 caracteres'
+                    },
+                    telefone: {
+                        required: 'O campo telefone é obrigatório',
+                        minlength: 'O campo telefone deve ter no mínimo 14 caracteres'
+                    },
+                    email: {
+                        required: 'O campo email é obrigatório',
+                        email: 'Digite um email válido'
+                    },
+                    veiculo_interesse: {
+                        required: 'O campo veículo de interesse é obrigatório'
+                    },
+                    mensagem: {
+                        required: 'O campo mensagem é obrigatório'
+                    }
+                }
+            });
         });
-    </script>
+        </script>
 </body>
 
 </html>
