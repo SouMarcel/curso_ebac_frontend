@@ -4,3 +4,56 @@
     padding: 0;
     font-family: 'Roboto', sans-serif;
 }
+
+.container {
+    max-width: 1024px;
+    width: 100%;    
+    margin: 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+header {
+    padding: 16px 0 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.menu > li { 
+    float: left;
+    list-style: none;
+    padding: 16px;
+    border-top: 4px solid transparent;
+    position: relative;
+}
+
+.menu li:hover {
+    border-color: red;
+}
+
+.menu li:hover .submenu { 
+    display: block;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.submenu {
+    display: none;
+    background-color: blueviolet;
+    position: absolute;
+    left: 0;
+    width: 300px;
+    top: 100%;
+}
+
+.submenu li {
+    display: block;
+    padding: 8px;
+}
+
